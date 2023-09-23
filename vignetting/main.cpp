@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <iomanip>
 #include "parameter.h"
 using namespace std;
 
@@ -33,7 +34,7 @@ int main() {
     }
     PrintData(realData, height, width);
     PrintPrediction(parameterA.GetValue(), parameterB.GetValue(), parameterC.GetValue(), parameterD.GetValue(), parameterE.GetValue(), parameterF.GetValue(), height, width);
-    cout << parameterA.GetValue() << " " << parameterB.GetValue() << " " << parameterC.GetValue() << " " << parameterD.GetValue() << " " << parameterE.GetValue() << " " << parameterF.GetValue();
+    cout << fixed << setprecision(5) << parameterA.GetValue() << " " << parameterB.GetValue() << " " << parameterC.GetValue() << " " << parameterD.GetValue() << " " << parameterE.GetValue() << " " << parameterF.GetValue();
     return 0;
 }
 
@@ -64,7 +65,7 @@ double GetFunctionRes(double A, double B, double C, double D, double E, double F
 void PrintPrediction(double A, double B, double C, double D, double E, double F, int height, int width) {
     for (int i = 0; i < height; ++i) {
         for (int j = 0; j < width; ++j) {
-            cout << abs(GetFunctionRes(A, B, C, D, E, F, i, j, height, width)) << " ";
+            cout << setprecision(4) << abs(GetFunctionRes(A, B, C, D, E, F, i, j, height, width)) << " ";
         }
         cout << "\n";
     }
