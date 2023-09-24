@@ -1,3 +1,0 @@
-/Users/leonidlevin/CLionProjects/vignetting/cmake-build-debug/CMakeFiles/vignetting.dir
-/Users/leonidlevin/CLionProjects/vignetting/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/leonidlevin/CLionProjects/vignetting/cmake-build-debug/CMakeFiles/rebuild_cache.dir
